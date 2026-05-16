@@ -7,6 +7,24 @@ function createApp() {
 
   app.use(express.json());
 
+  app.get('/', (req, res) => {
+    res
+      .status(200)
+      .type('html')
+      .send(`
+        <html>
+          <head>
+            <title>Virtual Event Management System</title>
+          </head>
+          <body>
+            <h1>Virtual Event Management System</h1>
+            <p>The API is running.</p>
+            <p>Try <a href="/health">/health</a> or the REST endpoints in the README.</p>
+          </body>
+        </html>
+      `);
+  });
+
   app.get('/health', (req, res) => {
     res.json({ status: 'ok' });
   });

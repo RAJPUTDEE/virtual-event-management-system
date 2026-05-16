@@ -6,7 +6,7 @@ Backend API for managing virtual events with in-memory data, JWT authentication,
 
 1. Install dependencies with `npm install`.
 2. Run the test suite with `npm test`.
-3. Start the API with `npm start`.
+3. Start the API with `npm start` or `node app.js`.
 
 ## Environment Variables
 
