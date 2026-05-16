@@ -1,0 +1,24 @@
+{
+  "name": "virtual-event-management-system",
+  "version": "1.0.0",
+  "description": "Virtual event management backend with in-memory data structures, JWT auth, and event registration workflows.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.10"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
