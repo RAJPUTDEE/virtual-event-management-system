@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { createApp } = require('../src/app');
+const { createApp } = require('../src/appFactory');
 const { resetStore, state } = require('../src/store');
 
 const app = createApp();
